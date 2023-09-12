@@ -39,4 +39,4 @@ To run the password strength checker locally on your machine, follow these steps
    ```sh
    git clone https://github.com/your-github-username/password-strength-checker.git
 # password-strength-checker
-"password-strength-checker." aka SleuthCracker
+"password-strength-checker." aka Fortifyguard
