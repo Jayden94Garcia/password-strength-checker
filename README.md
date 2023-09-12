@@ -1,6 +1,6 @@
+## Author Jayden R Garcia
 
-
-# Password Strength Checker Aurthor Jayden R Garcia
+# Password Strength Checker 
 
 A simple password strength checker program that assesses the strength of passwords based on complexity and length.
 
