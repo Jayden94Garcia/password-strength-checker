@@ -5,7 +5,7 @@
 A simple password strength checker program that assesses the strength of passwords based on complexity and length.
 
 ## Table of Contents
-
+- [Author](#author)
 - [Description](#description)
 - [Features](#features)
 - [Usage](#usage)
