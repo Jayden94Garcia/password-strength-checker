@@ -1,25 +1,38 @@
-const passwordInput = document.getElementById("password");
-const strengthText = document.getElementById("strength");
+var pass = document.getElementById("password");
+var msg = document.getElementById("message");
+var strength = document.getElementById("strength");
+var arrow = document.querySelector("button[type='submit']");
 
-passwordInput.addEventListener("input", () => {
-    const password = passwordInput.value;
-    const strength = assessPasswordStrength(password);
-    displayStrength(strength);
+arrow.addEventListener("click", function() {
+    if (pass.value.length === 0) {
+        alert("Tip💡: Add UPPERCASE, lowercase, symbols, letters for more secure passwords");
+    } else if (pass.value.length < 4) {
+        alert("🙅🏻‍♀️Password seems to be weak, Try more secure passwords.");
+    } else if (pass.value.length >= 6 && pass.value.length < 12) {
+        alert("📈Password seems to be medium, update it to be more secure.");
+    } else if (pass.value.length >= 12) {
+        alert("✅Password updated");
+    }
 });
 
-function assessPasswordStrength(password) {
-    // Implement your password assessment logic here
-    // You can use regular expressions or external libraries like zxcvbn
-    // For simplicity, let's use a basic logic here
-    if (password.length < 6) {
-        return "Weak";
-    } else if (password.length < 10) {
-        return "Moderate";
+pass.addEventListener("input", () => {
+    if (pass.value.length > 0) {
+        msg.style.display = "block";
     } else {
-        return "Strong";
+        msg.style.display = "none";
     }
-}
 
-function displayStrength(strength) {
-    strengthText.textContent = `Password Strength: ${strength}`;
-}
+    if (pass.value.length < 4) {
+        strength.innerHTML = "Weak";
+        pass.style.borderColor="#ff5925";
+        msg.style.color="#ff5925";
+    } else if (pass.value.length >= 6 && pass.value.length < 12) {
+        strength.innerHTML = "Medium";
+        pass.style.borderColor="orange";
+        msg.style.color="orange";
+    } else if (pass.value.length >= 12) {
+        strength.innerHTML = "Strong";
+        pass.style.borderColor="#26d730";
+        msg.style.color="#26d730";
+    }
+});
