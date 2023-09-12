@@ -25,7 +25,7 @@ This password strength checker program provides a basic way to assess the streng
 
 ## Usage
 
-1. Open the [Password Strength Checker](https://your-github-username.github.io/password-strength-checker/) in your web browser.
+1. Open the [Password Strength Checker](https://jayden94garcia.github.io/password-strength-checker/) in your web browser.
 
 2. Enter your desired password in the "Enter Password" field.
 
