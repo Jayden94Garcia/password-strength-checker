@@ -15,7 +15,7 @@ A simple password strength checker program that assesses the strength of passwor
 
 ## Description
 
-This password strength checker program provides a basic way to assess the strength of passwords entered by users. It evaluates passwords based on length and provides feedback on their strength.Implemented using HTML, CSS, and JavaScript. It provides real-time feedback on the strength of a password as it is being typed. When the submit button is clicked, it displays alerts indicating the strength of the password and provides suggestions for improvement.
+This password strength checker program provides a basic way to assess the strength of passwords entered by users. It evaluates passwords based on length and provides feedback on their strength. Implemented using HTML, CSS, and JavaScript. It provides real-time feedback on the strength of a password as it is being typed. When the submit button is clicked, it displays alerts indicating the strength of the password and provides suggestions for improvement.
 
 ## Features
 
